@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Kimura - Developer Portfolio</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Custom styles for the light theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #1f2937; /* Dark gray text */
+        }
+        .accent-color {
+            color: #0ea5e9; /* Sky blue accent */
+        }
+        .bg-accent {
+            background-color: #0ea5e9;
+        }
+        .border-accent {
+            border-color: #0ea5e9;
+        }
+        /* Style for the typing cursor */
+        .typing-cursor {
+            display: inline-block;
+            width: 8px;
+            height: 1.2em;
+            background-color: #0ea5e9;
+            animation: blink 0.7s infinite;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Your Name/Logo -->
+                <div class="text-2xl font-bold text-gray-800">
+                    <a href="#home">Samuel Kimura</a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8 text-lg">
+                    <a href="#about" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="#about" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-sky-600 transition-colors duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <!-- You can replace this placeholder image URL with a URL to your own professional photo -->
+                    <img src="https://placehold.co/160x160/e0f2fe/0c4a6e?text=SK" alt="Samuel Kimura" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-sky-500 shadow-lg">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Hi, I'm Samuel Kimura</h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                        I'm a <span id="typing-effect" class="accent-color font-semibold"></span><span class="typing-cursor"></span>
+                    </p>
+                    <a href="#projects" class="bg-sky-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-sky-600 transition-transform duration-300 inline-block transform hover:scale-105">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+                <div class="max-w-3xl mx-auto text-center text-gray-700 text-lg leading-relaxed">
+                    <!-- IMPORTANT: Replace this with your own professional summary -->
+                    <p class="mb-4">
+                        I am a passionate and dedicated computer programmer with a strong foundation in software development and engineering principles. I thrive on solving complex problems and am always eager to learn new technologies.
+                    </p>
+                    <p class="mb-4">
+                        My goal is to leverage my skills to build innovative and efficient applications. I am currently preparing for my industrial attachment, where I hope to contribute to a dynamic team and gain valuable real-world experience.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy exploring new tech trends and contributing to open-source projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">My Technical Skills</h2>
+                <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
+                    
+                    <!-- Skill Items updated with your list -->
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" class="h-16 w-16 mb-2" alt="C# Icon"/>
+                        <span class="text-lg font-medium">C#</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" class="h-16 w-16 mb-2" alt="SQL Icon"/>
+                        <span class="text-lg font-medium">SQL</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="h-16 w-16 mb-2" alt="HTML5 Icon"/>
+                        <span class="text-lg font-medium">HTML5</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="h-16 w-16 mb-2" alt="CSS3 Icon"/>
+                        <span class="text-lg font-medium">CSS3</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="h-16 w-16 mb-2" alt="JavaScript Icon"/>
+                        <span class="text-lg font-medium">JavaScript</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualbasic/visualbasic-plain.svg" class="h-16 w-16 mb-2" alt="VB.NET Icon"/>
+                        <span class="text-lg font-medium">VB.NET</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="h-16 w-16 mb-2" alt="Java Icon"/>
+                        <span class="text-lg font-medium">Java</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-16 w-16 mb-2" alt="Python Icon"/>
+                        <span class="text-lg font-medium">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="h-16 w-16 mb-2" alt="Node.js Icon"/>
+                        <span class="text-lg font-medium">Node.js</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-sm hover:shadow-lg hover:shadow-sky-200 hover:-translate-y-1 transition-all duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="h-16 w-16 mb-2" alt="Git Icon"/>
+                        <span class="text-lg font-medium">Git</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Featured Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Project Card 1: Duplicate this block for more projects -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:shadow-sky-200 transition-shadow duration-300 flex flex-col border border-gray-200">
+                        <img src="https://placehold.co/600x400/e5e7eb/1f2937?text=Project+1" alt="Project 1 Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Project Title One</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                A brief but compelling description of your project. Explain the problem it solves and the main features.
+                            </p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Django</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+                            </div>
+                            <div class="mt-auto pt-4 border-t border-gray-200 flex justify-between">
+                                <a href="#" target="_blank" class="text-sky-600 hover:text-sky-500 font-semibold flex items-center">
+                                    <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code
+                                </a>
+                                <a href="#" target="_blank" class="text-sky-600 hover:text-sky-500 font-semibold flex items-center">
+                                    <i data-feather="external-link" class="w-5 h-5 mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:shadow-sky-200 transition-shadow duration-300 flex flex-col border border-gray-200">
+                        <img src="https://placehold.co/600x400/e5e7eb/1f2937?text=Project+2" alt="Project 2 Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Project Title Two</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                Another great project. Mention the technology stack and what you learned from building this application.
+                            </p>
+                            <div class="mb-4">
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Node.js</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Express</span>
+                            </div>
+                            <div class="mt-auto pt-4 border-t border-gray-200 flex justify-between">
+                                <a href="#" target="_blank" class="text-sky-600 hover:text-sky-500 font-semibold flex items-center">
+                                    <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:shadow-sky-200 transition-shadow duration-300 flex flex-col border border-gray-200">
+                        <img src="https://placehold.co/600x400/e5e7eb/1f2937?text=Project+3" alt="Project 3 Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Project Title Three</h3>
+                            <p class="text-gray-600 mb-4 flex-grow">
+                                This could be a school project or a personal exploration. Focus on what makes it unique or challenging.
+                            </p>
+                             <div class="mb-4">
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">CSS</span>
+                                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Vanilla JS</span>
+                            </div>
+                            <div class="mt-auto pt-4 border-t border-gray-200 flex justify-between">
+                                <a href="#" target="_blank" class="text-sky-600 hover:text-sky-500 font-semibold flex items-center">
+                                    <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code
+                                </a>
+                                <a href="#" target="_blank" class="text-sky-600 hover:text-sky-500 font-semibold flex items-center">
+                                    <i data-feather="external-link" class="w-5 h-5 mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                    I'm currently looking for attachment opportunities and am open to new challenges. Feel free to reach out!
+                </p>
+                <div class="max-w-xl mx-auto text-center">
+                    <a href="mailto:your.email@example.com" class="bg-sky-500 text-white font-bold py-4 px-10 rounded-full text-xl hover:bg-sky-600 transition-transform duration-300 inline-block transform hover:scale-105">
+                        Say Hello
+                    </a>
+                    <div class="flex justify-center space-x-6 mt-10">
+                        <!-- Social links updated with your info -->
+                        <a href="https://github.com/samurakimura" target="_blank" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">
+                            <i data-feather="github" class="w-8 h-8"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-kimura-11b291210" target="_blank" class="text-gray-500 hover:text-sky-600 transition-colors duration-300">
+                            <i data-feather="linkedin" class="w-8 h-8"></i>
+                        </a>
+                        <a href="https://wa.link/38fbrt" target="_blank" class="text-gray-500 hover:text-green-500 transition-colors duration-300">
+                            <!-- Simple inline SVG for WhatsApp icon -->
+                            <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.31 20.6C8.75 21.39 10.36 21.82 12.04 21.82C17.5 21.82 21.95 17.37 21.95 11.91C21.95 9.27 20.92 6.8 19.16 4.97C17.41 3.14 14.94 2 12.04 2ZM12.04 3.67C14.24 3.67 16.3 4.5 17.82 6.02C19.34 7.54 20.28 9.6 20.28 11.8C20.28 16.44 16.61 20.11 11.96 20.11C10.44 20.11 8.98 19.72 7.7 19L7.22 18.72L4.32 19.59L5.21 16.78L4.93 16.3C4.12 14.92 3.7 13.37 3.7 11.8C3.7 7.16 7.37 3.49 12.02 3.49L12.04 3.67ZM9.17 7.45C8.97 7.45 8.78 7.45 8.61 7.45C8.37 7.45 8.1 7.52 7.89 7.9C7.68 8.28 7.03 8.89 7.03 10.08C7.03 11.27 7.91 12.41 8.06 12.59C8.21 12.77 10.25 15.84 13.22 17.15C15.53 18.15 16.12 17.93 16.56 17.88C17.13 17.81 18.13 17.22 18.35 16.4C18.57 15.58 18.57 14.91 18.49 14.78C18.41 14.64 18.22 14.55 17.95 14.41C17.68 14.27 16.51 13.69 16.26 13.59C16.01 13.49 15.84 13.44 15.68 13.69C15.52 13.94 15.01 14.55 14.85 14.73C14.68 14.91 14.52 14.93 14.25 14.81C13.98 14.69 13.03 14.36 11.89 13.34C11.01 12.55 10.42 11.6 10.27 11.35C10.12 11.1 10.23 10.97 10.35 10.85C10.45 10.75 10.58 10.58 10.71 10.43C10.83 10.28 10.88 10.16 10.98 9.96C11.08 9.76 11.03 9.59 10.96 9.47C10.88 9.35 10.39 8.12 10.17 7.64C9.95 7.16 9.73 7.21 9.56 7.21L9.17 7.45Z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2025 Samuel Kimura. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Feather Icons Initialization ---
+        feather.replace();
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Typing Effect ---
+        const typingElement = document.getElementById('typing-effect');
+        // Add the roles or titles you want to display
+        const words = ["Computer Programmer", "Web Developer", "Problem Solver", "Tech Enthusiast"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                // Deleting characters
+                typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                // Typing characters
+                typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            // If word is fully typed
+            if (!isDeleting && charIndex === currentWord.length) {
+                setTimeout(() => isDeleting = true, 2000); // Pause at end
+            } 
+            // If word is fully deleted
+            else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+            }
+
+            const typeSpeed = isDeleting ? 75 : 150;
+            setTimeout(type, typeSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', type);
+
+        // --- Smooth Scrolling for Navigation Links ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Also close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
